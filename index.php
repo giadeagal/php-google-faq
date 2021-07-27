@@ -63,6 +63,15 @@ $faqs  = [
     <title>Domande frequenti</title>
 </head>
 <body>
+
+<?php foreach ($faqs as $faq) {
+
+    echo($faq["q"] . "<br><br>");
+    echo($faq["a"] . "<hr>");
+    
+}
+?>
     <p></p>
+
 </body>
 </html>
