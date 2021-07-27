@@ -9,19 +9,22 @@ body {
 }
 
 header {
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     position: fixed;
     background-color: white;
     color: dimgray;
+    border-bottom: 1px solid dimgray;
 }
 
-header > .left {
+header > .top {
     font-size: 1.5rem;
+    padding-bottom: 10px;
 }
 
 li {
     display: inline;
+    padding-right: 30px;
 }
 
 li > a {
@@ -31,7 +34,7 @@ li > a {
 }
 
 .container {
-    padding-top: 30vh;
+    padding-top: 20vh;
     width: 70%;
     margin:auto;
 }

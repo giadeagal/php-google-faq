@@ -69,8 +69,8 @@ $faqs  = [
 <body>
 
 <header>
-    <div class="left">Privacy e termini</div>
-    <div class="right">
+    <div class="top">Privacy e termini</div>
+    <div class="bottom">
         <ul>
             <li><a href="#">Introduzione</a></li>
             <li><a href="#">Norme sulla privacy</a></li>
