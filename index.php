@@ -69,14 +69,16 @@ $faqs  = [
 <body>
 
 <header>
-    <div class="top">Privacy e termini</div>
+    <div class="top">
+        <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="">
+        <span>Privacy e termini</span></div>
     <div class="bottom">
         <ul>
             <li><a href="#">Introduzione</a></li>
             <li><a href="#">Norme sulla privacy</a></li>
             <li><a href="#">Termini di servizio</a></li>
             <li><a href="#">Tecnologie</a></li>
-            <li class="active"><a href="#">domande frequenti</a></li>
+            <li class="active"><a href="#">Domande frequenti</a></li>
         </ul>
     </div>
 </header>
@@ -85,7 +87,6 @@ $faqs  = [
 
 <?php foreach ($faqs as $faq) { ?>
 
-
 <h2><?php echo $faq["q"];?></h2>
 
 <p><?php echo $faq["a"];?></p>
@@ -93,6 +94,27 @@ $faqs  = [
 <?php } ?>
 
 </div>
+
+<footer>
+    <div class="flexer">
+        <div class="left">
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Tutto su Google</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Termini</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <select name="langs" id="langs">
+                <option value="ita">Italiano - Italian</option>
+                <option value="fra">Fran&#231;ais - French</option>
+                <option value="deu">Deutsch - German</option>
+                <option value="bul">&#x411;ългарски - Bulgarian</option>
+            </select>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
