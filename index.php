@@ -60,18 +60,39 @@ $faqs  = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <title>Domande frequenti</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<?php foreach ($faqs as $faq) {
+<header>
+    <div class="left">Privacy e termini</div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Introduzione</a></li>
+            <li><a href="#">Norme sulla privacy</a></li>
+            <li><a href="#">Termini di servizio</a></li>
+            <li><a href="#">Tecnologie</a></li>
+            <li class="active"><a href="#">domande frequenti</a></li>
+        </ul>
+    </div>
+</header>
 
-    echo($faq["q"] . "<br><br>");
-    echo($faq["a"] . "<hr>");
-    
-}
-?>
-    <p></p>
+<div class="container">
+
+<?php foreach ($faqs as $faq) { ?>
+
+
+<h2><?php echo $faq["q"];?></h2>
+
+<p><?php echo $faq["a"];?></p>
+
+<?php } ?>
+
+</div>
 
 </body>
 </html>
